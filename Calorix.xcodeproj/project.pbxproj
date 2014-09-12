@@ -1,0 +1,485 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		02DCCBC119C31EBD006360D0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02DCCBC019C31EBD006360D0 /* AppDelegate.swift */; };
+		02DCCBC319C31EBD006360D0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02DCCBC219C31EBD006360D0 /* ViewController.swift */; };
+		02DCCBC619C31EBD006360D0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 02DCCBC419C31EBD006360D0 /* Main.storyboard */; };
+		02DCCBC819C31EBD006360D0 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 02DCCBC719C31EBD006360D0 /* Images.xcassets */; };
+		02DCCBD419C31EBD006360D0 /* CalorixTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02DCCBD319C31EBD006360D0 /* CalorixTests.swift */; };
+		02DCCBDE19C31F84006360D0 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 02DCCBDD19C31F84006360D0 /* AudioToolbox.framework */; };
+		02DCCBE019C31F8C006360D0 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 02DCCBDF19C31F8C006360D0 /* CFNetwork.framework */; };
+		02DCCBE219C31F95006360D0 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 02DCCBE119C31F95006360D0 /* CoreGraphics.framework */; };
+		02DCCBE419C31FA4006360D0 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 02DCCBE319C31FA4006360D0 /* CoreLocation.framework */; };
+		02DCCBE619C31FAC006360D0 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 02DCCBE519C31FAC006360D0 /* libz.dylib */; };
+		02DCCBE819C31FB4006360D0 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 02DCCBE719C31FB4006360D0 /* MobileCoreServices.framework */; };
+		02DCCBEA19C31FBB006360D0 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 02DCCBE919C31FBB006360D0 /* QuartzCore.framework */; };
+		02DCCBEC19C31FC2006360D0 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 02DCCBEB19C31FC2006360D0 /* Security.framework */; };
+		02DCCBEE19C31FC8006360D0 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 02DCCBED19C31FC8006360D0 /* StoreKit.framework */; };
+		02DCCBF019C31FCE006360D0 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 02DCCBEF19C31FCE006360D0 /* SystemConfiguration.framework */; };
+		02DCCBF219C3200A006360D0 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 02DCCBF119C3200A006360D0 /* Parse.framework */; };
+		02DCCBF819C322A4006360D0 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 02DCCBF719C322A4006360D0 /* Bolts.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		02DCCBCE19C31EBD006360D0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 02DCCBB319C31EBC006360D0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 02DCCBBA19C31EBC006360D0;
+			remoteInfo = Calorix;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		02DCCBBB19C31EBC006360D0 /* Calorix.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Calorix.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		02DCCBBF19C31EBD006360D0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		02DCCBC019C31EBD006360D0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		02DCCBC219C31EBD006360D0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		02DCCBC519C31EBD006360D0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		02DCCBC719C31EBD006360D0 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		02DCCBCD19C31EBD006360D0 /* CalorixTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CalorixTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		02DCCBD219C31EBD006360D0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		02DCCBD319C31EBD006360D0 /* CalorixTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalorixTests.swift; sourceTree = "<group>"; };
+		02DCCBDD19C31F84006360D0 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		02DCCBDF19C31F8C006360D0 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		02DCCBE119C31F95006360D0 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		02DCCBE319C31FA4006360D0 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		02DCCBE519C31FAC006360D0 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		02DCCBE719C31FB4006360D0 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		02DCCBE919C31FBB006360D0 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		02DCCBEB19C31FC2006360D0 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		02DCCBED19C31FC8006360D0 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		02DCCBEF19C31FCE006360D0 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		02DCCBF119C3200A006360D0 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
+		02DCCBF319C320A4006360D0 /* Calorix-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Calorix-Bridging-Header.h"; sourceTree = SOURCE_ROOT; };
+		02DCCBF719C322A4006360D0 /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		02DCCBB819C31EBC006360D0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				02DCCBF019C31FCE006360D0 /* SystemConfiguration.framework in Frameworks */,
+				02DCCBEE19C31FC8006360D0 /* StoreKit.framework in Frameworks */,
+				02DCCBEC19C31FC2006360D0 /* Security.framework in Frameworks */,
+				02DCCBF819C322A4006360D0 /* Bolts.framework in Frameworks */,
+				02DCCBEA19C31FBB006360D0 /* QuartzCore.framework in Frameworks */,
+				02DCCBE819C31FB4006360D0 /* MobileCoreServices.framework in Frameworks */,
+				02DCCBE619C31FAC006360D0 /* libz.dylib in Frameworks */,
+				02DCCBF219C3200A006360D0 /* Parse.framework in Frameworks */,
+				02DCCBE419C31FA4006360D0 /* CoreLocation.framework in Frameworks */,
+				02DCCBE219C31F95006360D0 /* CoreGraphics.framework in Frameworks */,
+				02DCCBE019C31F8C006360D0 /* CFNetwork.framework in Frameworks */,
+				02DCCBDE19C31F84006360D0 /* AudioToolbox.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		02DCCBCA19C31EBD006360D0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		02DCCBB219C31EBC006360D0 = {
+			isa = PBXGroup;
+			children = (
+				02DCCBF619C321F0006360D0 /* Frameworks */,
+				02DCCBBD19C31EBC006360D0 /* Calorix */,
+				02DCCBD019C31EBD006360D0 /* CalorixTests */,
+				02DCCBBC19C31EBC006360D0 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		02DCCBBC19C31EBC006360D0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				02DCCBBB19C31EBC006360D0 /* Calorix.app */,
+				02DCCBCD19C31EBD006360D0 /* CalorixTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		02DCCBBD19C31EBC006360D0 /* Calorix */ = {
+			isa = PBXGroup;
+			children = (
+				02DCCBF319C320A4006360D0 /* Calorix-Bridging-Header.h */,
+				02DCCBC019C31EBD006360D0 /* AppDelegate.swift */,
+				02DCCBC219C31EBD006360D0 /* ViewController.swift */,
+				02DCCBC419C31EBD006360D0 /* Main.storyboard */,
+				02DCCBC719C31EBD006360D0 /* Images.xcassets */,
+				02DCCBBE19C31EBC006360D0 /* Supporting Files */,
+			);
+			path = Calorix;
+			sourceTree = "<group>";
+		};
+		02DCCBBE19C31EBC006360D0 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				02DCCBBF19C31EBD006360D0 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		02DCCBD019C31EBD006360D0 /* CalorixTests */ = {
+			isa = PBXGroup;
+			children = (
+				02DCCBD319C31EBD006360D0 /* CalorixTests.swift */,
+				02DCCBD119C31EBD006360D0 /* Supporting Files */,
+			);
+			path = CalorixTests;
+			sourceTree = "<group>";
+		};
+		02DCCBD119C31EBD006360D0 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				02DCCBD219C31EBD006360D0 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		02DCCBF619C321F0006360D0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				02DCCBF719C322A4006360D0 /* Bolts.framework */,
+				02DCCBF119C3200A006360D0 /* Parse.framework */,
+				02DCCBEF19C31FCE006360D0 /* SystemConfiguration.framework */,
+				02DCCBED19C31FC8006360D0 /* StoreKit.framework */,
+				02DCCBEB19C31FC2006360D0 /* Security.framework */,
+				02DCCBE919C31FBB006360D0 /* QuartzCore.framework */,
+				02DCCBE719C31FB4006360D0 /* MobileCoreServices.framework */,
+				02DCCBE519C31FAC006360D0 /* libz.dylib */,
+				02DCCBE319C31FA4006360D0 /* CoreLocation.framework */,
+				02DCCBE119C31F95006360D0 /* CoreGraphics.framework */,
+				02DCCBDF19C31F8C006360D0 /* CFNetwork.framework */,
+				02DCCBDD19C31F84006360D0 /* AudioToolbox.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		02DCCBBA19C31EBC006360D0 /* Calorix */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 02DCCBD719C31EBD006360D0 /* Build configuration list for PBXNativeTarget "Calorix" */;
+			buildPhases = (
+				02DCCBB719C31EBC006360D0 /* Sources */,
+				02DCCBB819C31EBC006360D0 /* Frameworks */,
+				02DCCBB919C31EBC006360D0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Calorix;
+			productName = Calorix;
+			productReference = 02DCCBBB19C31EBC006360D0 /* Calorix.app */;
+			productType = "com.apple.product-type.application";
+		};
+		02DCCBCC19C31EBD006360D0 /* CalorixTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 02DCCBDA19C31EBD006360D0 /* Build configuration list for PBXNativeTarget "CalorixTests" */;
+			buildPhases = (
+				02DCCBC919C31EBD006360D0 /* Sources */,
+				02DCCBCA19C31EBD006360D0 /* Frameworks */,
+				02DCCBCB19C31EBD006360D0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				02DCCBCF19C31EBD006360D0 /* PBXTargetDependency */,
+			);
+			name = CalorixTests;
+			productName = CalorixTests;
+			productReference = 02DCCBCD19C31EBD006360D0 /* CalorixTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		02DCCBB319C31EBC006360D0 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0600;
+				ORGANIZATIONNAME = KoichiNishide;
+				TargetAttributes = {
+					02DCCBBA19C31EBC006360D0 = {
+						CreatedOnToolsVersion = 6.0;
+					};
+					02DCCBCC19C31EBD006360D0 = {
+						CreatedOnToolsVersion = 6.0;
+						TestTargetID = 02DCCBBA19C31EBC006360D0;
+					};
+				};
+			};
+			buildConfigurationList = 02DCCBB619C31EBC006360D0 /* Build configuration list for PBXProject "Calorix" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 02DCCBB219C31EBC006360D0;
+			productRefGroup = 02DCCBBC19C31EBC006360D0 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				02DCCBBA19C31EBC006360D0 /* Calorix */,
+				02DCCBCC19C31EBD006360D0 /* CalorixTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		02DCCBB919C31EBC006360D0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				02DCCBC619C31EBD006360D0 /* Main.storyboard in Resources */,
+				02DCCBC819C31EBD006360D0 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		02DCCBCB19C31EBD006360D0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		02DCCBB719C31EBC006360D0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				02DCCBC319C31EBD006360D0 /* ViewController.swift in Sources */,
+				02DCCBC119C31EBD006360D0 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		02DCCBC919C31EBD006360D0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				02DCCBD419C31EBD006360D0 /* CalorixTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		02DCCBCF19C31EBD006360D0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 02DCCBBA19C31EBC006360D0 /* Calorix */;
+			targetProxy = 02DCCBCE19C31EBD006360D0 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		02DCCBC419C31EBD006360D0 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				02DCCBC519C31EBD006360D0 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		02DCCBD519C31EBD006360D0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		02DCCBD619C31EBD006360D0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		02DCCBD819C31EBD006360D0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_MODULES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = Calorix/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Calorix-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		02DCCBD919C31EBD006360D0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_MODULES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = Calorix/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Calorix-Bridging-Header.h";
+			};
+			name = Release;
+		};
+		02DCCBDB19C31EBD006360D0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = CalorixTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Calorix.app/Calorix";
+			};
+			name = Debug;
+		};
+		02DCCBDC19C31EBD006360D0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = CalorixTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Calorix.app/Calorix";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		02DCCBB619C31EBC006360D0 /* Build configuration list for PBXProject "Calorix" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				02DCCBD519C31EBD006360D0 /* Debug */,
+				02DCCBD619C31EBD006360D0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		02DCCBD719C31EBD006360D0 /* Build configuration list for PBXNativeTarget "Calorix" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				02DCCBD819C31EBD006360D0 /* Debug */,
+				02DCCBD919C31EBD006360D0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		02DCCBDA19C31EBD006360D0 /* Build configuration list for PBXNativeTarget "CalorixTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				02DCCBDB19C31EBD006360D0 /* Debug */,
+				02DCCBDC19C31EBD006360D0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 02DCCBB319C31EBC006360D0 /* Project object */;
+}
