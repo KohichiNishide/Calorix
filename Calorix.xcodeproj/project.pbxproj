@@ -22,8 +22,8 @@
 		02DCCBEC19C31FC2006360D0 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 02DCCBEB19C31FC2006360D0 /* Security.framework */; };
 		02DCCBEE19C31FC8006360D0 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 02DCCBED19C31FC8006360D0 /* StoreKit.framework */; };
 		02DCCBF019C31FCE006360D0 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 02DCCBEF19C31FCE006360D0 /* SystemConfiguration.framework */; };
-		02DCCBF219C3200A006360D0 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 02DCCBF119C3200A006360D0 /* Parse.framework */; };
-		02DCCBF819C322A4006360D0 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 02DCCBF719C322A4006360D0 /* Bolts.framework */; };
+		02DCCBFB19C32A3A006360D0 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 02DCCBF919C32A3A006360D0 /* Bolts.framework */; };
+		02DCCBFC19C32A3B006360D0 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 02DCCBFA19C32A3A006360D0 /* Parse.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,9 +56,9 @@
 		02DCCBEB19C31FC2006360D0 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		02DCCBED19C31FC8006360D0 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 		02DCCBEF19C31FCE006360D0 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
-		02DCCBF119C3200A006360D0 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
-		02DCCBF319C320A4006360D0 /* Calorix-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Calorix-Bridging-Header.h"; sourceTree = SOURCE_ROOT; };
-		02DCCBF719C322A4006360D0 /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
+		02DCCBF919C32A3A006360D0 /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Bolts.framework; path = vendor/Bolts.framework; sourceTree = "<group>"; };
+		02DCCBFA19C32A3A006360D0 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Parse.framework; path = vendor/Parse.framework; sourceTree = "<group>"; };
+		02DCCBFD19C32A74006360D0 /* Calorix-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Calorix-Bridging-Header.h"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,14 +69,14 @@
 				02DCCBF019C31FCE006360D0 /* SystemConfiguration.framework in Frameworks */,
 				02DCCBEE19C31FC8006360D0 /* StoreKit.framework in Frameworks */,
 				02DCCBEC19C31FC2006360D0 /* Security.framework in Frameworks */,
-				02DCCBF819C322A4006360D0 /* Bolts.framework in Frameworks */,
 				02DCCBEA19C31FBB006360D0 /* QuartzCore.framework in Frameworks */,
 				02DCCBE819C31FB4006360D0 /* MobileCoreServices.framework in Frameworks */,
 				02DCCBE619C31FAC006360D0 /* libz.dylib in Frameworks */,
-				02DCCBF219C3200A006360D0 /* Parse.framework in Frameworks */,
 				02DCCBE419C31FA4006360D0 /* CoreLocation.framework in Frameworks */,
 				02DCCBE219C31F95006360D0 /* CoreGraphics.framework in Frameworks */,
+				02DCCBFB19C32A3A006360D0 /* Bolts.framework in Frameworks */,
 				02DCCBE019C31F8C006360D0 /* CFNetwork.framework in Frameworks */,
+				02DCCBFC19C32A3B006360D0 /* Parse.framework in Frameworks */,
 				02DCCBDE19C31F84006360D0 /* AudioToolbox.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -94,7 +94,7 @@
 		02DCCBB219C31EBC006360D0 = {
 			isa = PBXGroup;
 			children = (
-				02DCCBF619C321F0006360D0 /* Frameworks */,
+				02DCCBF619C321F0006360D0 /* vendor */,
 				02DCCBBD19C31EBC006360D0 /* Calorix */,
 				02DCCBD019C31EBD006360D0 /* CalorixTests */,
 				02DCCBBC19C31EBC006360D0 /* Products */,
@@ -113,7 +113,7 @@
 		02DCCBBD19C31EBC006360D0 /* Calorix */ = {
 			isa = PBXGroup;
 			children = (
-				02DCCBF319C320A4006360D0 /* Calorix-Bridging-Header.h */,
+				02DCCBFD19C32A74006360D0 /* Calorix-Bridging-Header.h */,
 				02DCCBC019C31EBD006360D0 /* AppDelegate.swift */,
 				02DCCBC219C31EBD006360D0 /* ViewController.swift */,
 				02DCCBC419C31EBD006360D0 /* Main.storyboard */,
@@ -128,7 +128,7 @@
 			children = (
 				02DCCBBF19C31EBD006360D0 /* Info.plist */,
 			);
-			name = "Supporting Files";
+			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
 		02DCCBD019C31EBD006360D0 /* CalorixTests */ = {
@@ -145,14 +145,14 @@
 			children = (
 				02DCCBD219C31EBD006360D0 /* Info.plist */,
 			);
-			name = "Supporting Files";
+			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		02DCCBF619C321F0006360D0 /* Frameworks */ = {
+		02DCCBF619C321F0006360D0 /* vendor */ = {
 			isa = PBXGroup;
 			children = (
-				02DCCBF719C322A4006360D0 /* Bolts.framework */,
-				02DCCBF119C3200A006360D0 /* Parse.framework */,
+				02DCCBF919C32A3A006360D0 /* Bolts.framework */,
+				02DCCBFA19C32A3A006360D0 /* Parse.framework */,
 				02DCCBEF19C31FCE006360D0 /* SystemConfiguration.framework */,
 				02DCCBED19C31FC8006360D0 /* StoreKit.framework */,
 				02DCCBEB19C31FC2006360D0 /* Security.framework */,
@@ -164,7 +164,7 @@
 				02DCCBDF19C31F8C006360D0 /* CFNetwork.framework */,
 				02DCCBDD19C31F84006360D0 /* AudioToolbox.framework */,
 			);
-			name = Frameworks;
+			name = vendor;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -389,8 +389,9 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/vendor",
 				);
-				INFOPLIST_FILE = Calorix/Info.plist;
+				INFOPLIST_FILE = "Calorix/Supporting Files/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -408,8 +409,9 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/vendor",
 				);
-				INFOPLIST_FILE = Calorix/Info.plist;
+				INFOPLIST_FILE = "Calorix/Supporting Files/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -429,7 +431,7 @@
 					"DEBUG=1",
 					"$(inherited)",
 				);
-				INFOPLIST_FILE = CalorixTests/Info.plist;
+				INFOPLIST_FILE = "CalorixTests/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Calorix.app/Calorix";
@@ -444,7 +446,7 @@
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
 				);
-				INFOPLIST_FILE = CalorixTests/Info.plist;
+				INFOPLIST_FILE = "CalorixTests/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Calorix.app/Calorix";
@@ -470,6 +472,7 @@
 				02DCCBD919C31EBD006360D0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		02DCCBDA19C31EBD006360D0 /* Build configuration list for PBXNativeTarget "CalorixTests" */ = {
 			isa = XCConfigurationList;
@@ -478,6 +481,7 @@
 				02DCCBDC19C31EBD006360D0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
