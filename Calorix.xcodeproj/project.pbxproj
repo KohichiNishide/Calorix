@@ -24,6 +24,7 @@
 		02DCCBF019C31FCE006360D0 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 02DCCBEF19C31FCE006360D0 /* SystemConfiguration.framework */; };
 		02DCCBFB19C32A3A006360D0 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 02DCCBF919C32A3A006360D0 /* Bolts.framework */; };
 		02DCCBFC19C32A3B006360D0 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 02DCCBFA19C32A3A006360D0 /* Parse.framework */; };
+		02DCCC0119C3C9D4006360D0 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02DCCC0019C3C9D4006360D0 /* MainViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +60,7 @@
 		02DCCBF919C32A3A006360D0 /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Bolts.framework; path = vendor/Bolts.framework; sourceTree = "<group>"; };
 		02DCCBFA19C32A3A006360D0 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Parse.framework; path = vendor/Parse.framework; sourceTree = "<group>"; };
 		02DCCBFD19C32A74006360D0 /* Calorix-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Calorix-Bridging-Header.h"; sourceTree = SOURCE_ROOT; };
+		02DCCC0019C3C9D4006360D0 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,6 +121,7 @@
 				02DCCBC419C31EBD006360D0 /* Main.storyboard */,
 				02DCCBC719C31EBD006360D0 /* Images.xcassets */,
 				02DCCBBE19C31EBC006360D0 /* Supporting Files */,
+				02DCCC0019C3C9D4006360D0 /* MainViewController.swift */,
 			);
 			path = Calorix;
 			sourceTree = "<group>";
@@ -266,6 +269,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				02DCCC0119C3C9D4006360D0 /* MainViewController.swift in Sources */,
 				02DCCBC319C31EBD006360D0 /* ViewController.swift in Sources */,
 				02DCCBC119C31EBD006360D0 /* AppDelegate.swift in Sources */,
 			);
@@ -392,7 +396,7 @@
 					"$(PROJECT_DIR)/vendor",
 				);
 				INFOPLIST_FILE = "Calorix/Supporting Files/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "Calorix-Bridging-Header.h";
@@ -412,7 +416,7 @@
 					"$(PROJECT_DIR)/vendor",
 				);
 				INFOPLIST_FILE = "Calorix/Supporting Files/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "Calorix-Bridging-Header.h";
