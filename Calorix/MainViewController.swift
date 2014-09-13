@@ -16,6 +16,8 @@ class MainViewController: UIViewController, UITableViewDelegate, UITableViewData
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        self.tableView.delegate = self
+        self.tableView.dataSource = self;
     }
     
     override func didReceiveMemoryWarning() {
