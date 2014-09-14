@@ -18,6 +18,8 @@ class MainViewController: UIViewController, UITableViewDelegate, UITableViewData
         // Do any additional setup after loading the view, typically from a nib.
         self.tableView.delegate = self
         self.tableView.dataSource = self;
+        
+        ModelLocator.sharedInstance.networkModel.asyncLoadAllFoods()
     }
     
     override func didReceiveMemoryWarning() {

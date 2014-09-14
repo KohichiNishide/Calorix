@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0295FDC519C5B1DA006201D2 /* ModelLocator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0295FDC419C5B1DA006201D2 /* ModelLocator.swift */; };
+		0295FDC819C5BAD4006201D2 /* NetworkModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0295FDC719C5BAD4006201D2 /* NetworkModel.swift */; };
 		02DCCBC119C31EBD006360D0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02DCCBC019C31EBD006360D0 /* AppDelegate.swift */; };
 		02DCCBC319C31EBD006360D0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02DCCBC219C31EBD006360D0 /* ViewController.swift */; };
 		02DCCBC619C31EBD006360D0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 02DCCBC419C31EBD006360D0 /* Main.storyboard */; };
@@ -38,6 +40,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0295FDC419C5B1DA006201D2 /* ModelLocator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModelLocator.swift; sourceTree = "<group>"; };
+		0295FDC719C5BAD4006201D2 /* NetworkModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkModel.swift; sourceTree = "<group>"; };
 		02DCCBBB19C31EBC006360D0 /* Calorix.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Calorix.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		02DCCBBF19C31EBD006360D0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		02DCCBC019C31EBD006360D0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -93,6 +97,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0295FDC619C5BA83006201D2 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				0295FDC419C5B1DA006201D2 /* ModelLocator.swift */,
+				0295FDC719C5BAD4006201D2 /* NetworkModel.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
 		02DCCBB219C31EBC006360D0 = {
 			isa = PBXGroup;
 			children = (
@@ -115,6 +128,7 @@
 		02DCCBBD19C31EBC006360D0 /* Calorix */ = {
 			isa = PBXGroup;
 			children = (
+				0295FDC619C5BA83006201D2 /* Model */,
 				02DCCBFD19C32A74006360D0 /* Calorix-Bridging-Header.h */,
 				02DCCBC019C31EBD006360D0 /* AppDelegate.swift */,
 				02DCCBC219C31EBD006360D0 /* ViewController.swift */,
@@ -271,6 +285,8 @@
 			files = (
 				02DCCC0119C3C9D4006360D0 /* MainViewController.swift in Sources */,
 				02DCCBC319C31EBD006360D0 /* ViewController.swift in Sources */,
+				0295FDC519C5B1DA006201D2 /* ModelLocator.swift in Sources */,
+				0295FDC819C5BAD4006201D2 /* NetworkModel.swift in Sources */,
 				02DCCBC119C31EBD006360D0 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
