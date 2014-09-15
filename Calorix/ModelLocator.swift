@@ -14,5 +14,5 @@ class ModelLocator : NSObject {
         return Singleton.instance
     }
     
-    var networkModel : NetworkModel = NetworkModel()
+    var parseBridgeModel : ParseBridgeModel = ParseBridgeModel()
 }
