@@ -7,24 +7,30 @@
 //
 
 protocol ParseBridgeDelegate : class {
-    func loadedAllFood(foods : NSArray) -> ()
+    func loadedAllFood(foods : [Food]) -> ()
 }
 
-class ParseBridgeModel : NSObject {
+class ParseBridgeModel {
     weak var delegate :ParseBridgeDelegate? = nil
+    let foodClassName = "Food"
+    let nameKey = "name"
+    let calorieKey = "calorie"
     
-    //var foods = [Food]()
-    var foods : NSArray = []
     func asyncLoadAllFoods () {
-        var query : PFQuery = PFQuery(className: "Food")
+        var query : PFQuery = PFQuery(className: foodClassName)
         query.findObjectsInBackgroundWithBlock({(objects : [AnyObject]!, error: NSError!) in
             if (error != nil) {
                 NSLog("error " + error.localizedDescription)
             }
             else {
-                self.foods = objects
-                NSLog("foods %@", self.foods as NSArray)
-                self.delegate?.loadedAllFood(self.foods)
+                var foods = [Food]()
+                for parseObject in objects {
+                    var name = parseObject.objectForKey(self.nameKey) as String
+                    var calorie = parseObject.objectForKey(self.calorieKey) as Int
+                    var food = Food(name: name, calorie: calorie)
+                    foods.append(food)
+                }
+                self.delegate?.loadedAllFood(foods)
             }
         })
     }

@@ -11,7 +11,8 @@ import UIKit
 class MainViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, ParseBridgeDelegate {
     
     @IBOutlet weak var tableView: UITableView!
-    var foods = ["焼きそば", "出し巻き卵", "みそ汁", "ご飯（中）"]
+    var foods = [Food]()
+    let kcalUnit = "kcal"
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -35,8 +36,8 @@ class MainViewController: UIViewController, UITableViewDelegate, UITableViewData
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell: UITableViewCell = UITableViewCell(style: UITableViewCellStyle.Subtitle, reuseIdentifier: "MyTestCell")
-        cell.textLabel?.text = foods[indexPath.row]
-        cell.detailTextLabel?.text = "100kcal"
+        cell.textLabel?.text = foods[indexPath.row].name
+        cell.detailTextLabel?.text = String(foods[indexPath.row].calorie) + kcalUnit
         return cell
     }
     
@@ -46,7 +47,8 @@ class MainViewController: UIViewController, UITableViewDelegate, UITableViewData
     
     //----------------ParseBridgeDelegate methods------------------//
     
-    func loadedAllFood(foods : NSArray) {
-        NSLog("received foods %@", foods as NSArray)
+    func loadedAllFood(foods : [Food]) {
+        self.foods = foods
+        self.tableView.reloadData()
     }
 }

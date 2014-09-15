@@ -6,7 +6,7 @@
 //  Copyright (c) 2014年 KoichiNishide. All rights reserved.
 //
 
-class ModelLocator : NSObject {
+class ModelLocator {
     class var sharedInstance : ModelLocator {
         struct Singleton {
             static let instance : ModelLocator = ModelLocator()

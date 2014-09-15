@@ -7,5 +7,12 @@
 //
 
 import Foundation
-class Food : NSObject {
+class Food {
+    var name : String = ""
+    var calorie : Int = 0
+    
+    init(name: String, calorie: Int) {
+        self.name = name
+        self.calorie = calorie
+    }
 }
