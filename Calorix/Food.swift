@@ -6,7 +6,6 @@
 //  Copyright (c) 2014年 KoichiNishide. All rights reserved.
 //
 
-import Foundation
 class Food {
     var name : String
     var calorie : Int
