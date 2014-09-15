@@ -48,6 +48,7 @@ class MainViewController: UIViewController, UITableViewDelegate, UITableViewData
     //----------------ParseBridgeDelegate methods------------------//
     
     func loadedAllFood(foods : [Food]) {
+        // Executed by main thread
         self.foods = foods
         self.tableView.reloadData()
     }
