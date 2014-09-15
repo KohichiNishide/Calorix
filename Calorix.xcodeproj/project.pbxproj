@@ -114,12 +114,20 @@
 			name = Views;
 			sourceTree = "<group>";
 		};
+		0229D25C19C6F645009D4130 /* DataModels */ = {
+			isa = PBXGroup;
+			children = (
+				0295FDCA19C6797F006201D2 /* Food.swift */,
+			);
+			name = DataModels;
+			sourceTree = "<group>";
+		};
 		0295FDC619C5BA83006201D2 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				0229D25C19C6F645009D4130 /* DataModels */,
 				0295FDC419C5B1DA006201D2 /* ModelLocator.swift */,
 				0295FDC719C5BAD4006201D2 /* ParseBridgeModel.swift */,
-				0295FDCA19C6797F006201D2 /* Food.swift */,
 			);
 			name = Models;
 			sourceTree = "<group>";
