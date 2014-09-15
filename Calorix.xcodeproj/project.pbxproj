@@ -97,14 +97,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		0295FDC619C5BA83006201D2 /* Model */ = {
+		0229D25A19C6F483009D4130 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				02DCCBC019C31EBD006360D0 /* AppDelegate.swift */,
+				02DCCC0019C3C9D4006360D0 /* MainViewController.swift */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		0229D25B19C6F48C009D4130 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				02DCCBC419C31EBD006360D0 /* Main.storyboard */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		0295FDC619C5BA83006201D2 /* Models */ = {
 			isa = PBXGroup;
 			children = (
 				0295FDC419C5B1DA006201D2 /* ModelLocator.swift */,
 				0295FDC719C5BAD4006201D2 /* ParseBridgeModel.swift */,
 				0295FDCA19C6797F006201D2 /* Food.swift */,
 			);
-			name = Model;
+			name = Models;
 			sourceTree = "<group>";
 		};
 		02DCCBB219C31EBC006360D0 = {
@@ -129,13 +146,12 @@
 		02DCCBBD19C31EBC006360D0 /* Calorix */ = {
 			isa = PBXGroup;
 			children = (
-				0295FDC619C5BA83006201D2 /* Model */,
+				0229D25B19C6F48C009D4130 /* Views */,
+				0229D25A19C6F483009D4130 /* Controllers */,
+				0295FDC619C5BA83006201D2 /* Models */,
 				02DCCBFD19C32A74006360D0 /* Calorix-Bridging-Header.h */,
-				02DCCBC019C31EBD006360D0 /* AppDelegate.swift */,
-				02DCCBC419C31EBD006360D0 /* Main.storyboard */,
 				02DCCBC719C31EBD006360D0 /* Images.xcassets */,
 				02DCCBBE19C31EBC006360D0 /* Supporting Files */,
-				02DCCC0019C3C9D4006360D0 /* MainViewController.swift */,
 			);
 			path = Calorix;
 			sourceTree = "<group>";
