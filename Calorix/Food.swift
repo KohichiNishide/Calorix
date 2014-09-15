@@ -8,8 +8,8 @@
 
 import Foundation
 class Food {
-    var name : String = ""
-    var calorie : Int = 0
+    var name : String
+    var calorie : Int
     
     init(name: String, calorie: Int) {
         self.name = name
