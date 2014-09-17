@@ -14,26 +14,44 @@ class ParseBridgeModel {
     let nameKey = "name"
     let calorieKey = "calorie"
     
+    var loadedMeals: [PFObject] = []
+    
     func asyncLoadAllMeals () {
-        var query: PFQuery = PFQuery(className: foodClassName)
-        query.findObjectsInBackgroundWithBlock({(foods: [AnyObject]!, error: NSError!) in
+        var query: PFQuery = PFQuery(className: mealClassName)
+        query.findObjectsInBackgroundWithBlock({(meals: [AnyObject]!, error: NSError!) in
             if (error != nil) {
                 NSLog("error " + error.localizedDescription)
                 return
             }
-            var loadedFoods:[Food] = []
-            for food in foods {
-                var name = food.objectForKey(self.nameKey) as String?
-                var calorie = food.objectForKey(self.calorieKey) as Int?
-                var loadedFood = Food(name: name!, calorie: calorie!)
-                loadedFoods.append(loadedFood)
-            }
-            self.delegate?.loadedAllFood(loadedFoods)
+            self.loadedMeals = meals as [PFObject]
+            self.delegate?.loadedAllMeals()
         })
+    }
+    
+    func asyncLoadAllFoods () {
+        var reloadedFoods:[Food] = []
+        for meal in loadedMeals {
+            var relation: PFRelation = meal.relationForKey(self.foodsKey)
+            var foodsQuery: PFQuery = relation.query()
+            foodsQuery.findObjectsInBackgroundWithBlock({(foods: [AnyObject]!, error: NSError!) in
+                if (error != nil) {
+                    NSLog("error " + error.localizedDescription)
+                    return
+                }
+                for food in foods {
+                    var name = food.objectForKey(self.nameKey) as String?
+                    var calorie = food.objectForKey(self.calorieKey) as Int?
+                    var reloadedFood = Food(name: name!, calorie: calorie!)
+                    reloadedFoods.append(reloadedFood)
+                }
+                self.delegate?.loadedAllFoods(reloadedFoods)
+            })
+        }
     }
 }
 
 protocol ParseBridgeDelegate : class {
-    func loadedAllFood(foods : [Food]) -> ()
+    func loadedAllMeals() -> ()
+    func loadedAllFoods(foods: [Food]) -> ()
 }
 
