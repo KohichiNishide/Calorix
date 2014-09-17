@@ -20,7 +20,7 @@ class MainViewController: UIViewController, UITableViewDelegate, UITableViewData
         self.tableView.delegate = self
         self.tableView.dataSource = self;
         ModelLocator.sharedInstance.parseBridgeModel.delegate = self
-        ModelLocator.sharedInstance.parseBridgeModel.asyncLoadAllFoods()
+        ModelLocator.sharedInstance.parseBridgeModel.asyncLoadAllMeals()
     }
     
     override func didReceiveMemoryWarning() {

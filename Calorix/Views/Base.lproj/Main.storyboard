@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6206.9" systemVersion="13E28" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7026.1"/>
+        <capability name="Constraints with attributes relative to the layout margin" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--Main View Controller-->
@@ -20,8 +21,8 @@
                                 <rect key="frame" x="0.0" y="209" width="600" height="391"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </tableView>
-                            <navigationBar contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Bhe-0k-fw7">
-                                <rect key="frame" x="-86" y="-2" width="686" height="44"/>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Bhe-0k-fw7">
+                                <rect key="frame" x="16" y="0.0" width="568" height="44"/>
                                 <items>
                                     <navigationItem title="Calorix" id="r9p-cE-DQ9"/>
                                 </items>
@@ -29,7 +30,10 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="Bhe-0k-fw7" secondAttribute="trailing" id="Ci2-3k-jgt"/>
                             <constraint firstAttribute="centerX" secondItem="Bhe-0k-fw7" secondAttribute="centerX" id="Gaq-Zg-3xT"/>
+                            <constraint firstItem="Bhe-0k-fw7" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" id="T0O-hm-L5N"/>
+                            <constraint firstItem="Bhe-0k-fw7" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="hox-zk-Veq"/>
                         </constraints>
                     </view>
                     <connections>
