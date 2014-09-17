@@ -29,7 +29,6 @@ class ParseBridgeModel {
     }
     
     func asyncLoadAllFoods () {
-        var reloadedFoods:[Food] = []
         for meal in loadedMeals {
             var relation: PFRelation = meal.relationForKey(self.foodsKey)
             var foodsQuery: PFQuery = relation.query()
@@ -38,15 +37,16 @@ class ParseBridgeModel {
                     NSLog("error " + error.localizedDescription)
                     return
                 }
+                var loadedFoods:[Food] = []
                 for food in foods {
                     var name = food.objectForKey(self.nameKey) as String?
                     var calorie = food.objectForKey(self.calorieKey) as Int?
-                    var reloadedFood = Food(name: name!, calorie: calorie!)
-                    reloadedFoods.append(reloadedFood)
+                    var loadedFood = Food(name: name!, calorie: calorie!)
+                    loadedFoods.append(loadedFood)
                 }
                 //TODO: get image file
                 var takenAt: NSDate = meal.objectForKey("takenAt") as NSDate!
-                self.delegate?.loadedAllFoodsByMealUnit(Meal(takenAt: takenAt, foods: reloadedFoods))
+                self.delegate?.loadedAllFoodsByMealUnit(Meal(takenAt: takenAt, foods: loadedFoods))
             })
         }
     }
