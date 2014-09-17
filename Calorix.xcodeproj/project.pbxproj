@@ -10,6 +10,7 @@
 		0295FDC519C5B1DA006201D2 /* ModelLocator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0295FDC419C5B1DA006201D2 /* ModelLocator.swift */; };
 		0295FDC819C5BAD4006201D2 /* ParseBridgeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0295FDC719C5BAD4006201D2 /* ParseBridgeModel.swift */; };
 		0295FDCB19C6797F006201D2 /* Food.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0295FDCA19C6797F006201D2 /* Food.swift */; };
+		02A2B5DD19C9CC1100B7A0F1 /* Meal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02A2B5DC19C9CC1100B7A0F1 /* Meal.swift */; };
 		02DCCBC119C31EBD006360D0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02DCCBC019C31EBD006360D0 /* AppDelegate.swift */; };
 		02DCCBC619C31EBD006360D0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 02DCCBC419C31EBD006360D0 /* Main.storyboard */; };
 		02DCCBC819C31EBD006360D0 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 02DCCBC719C31EBD006360D0 /* Images.xcassets */; };
@@ -44,6 +45,7 @@
 		0295FDC419C5B1DA006201D2 /* ModelLocator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModelLocator.swift; sourceTree = "<group>"; };
 		0295FDC719C5BAD4006201D2 /* ParseBridgeModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParseBridgeModel.swift; sourceTree = "<group>"; };
 		0295FDCA19C6797F006201D2 /* Food.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Food.swift; sourceTree = "<group>"; };
+		02A2B5DC19C9CC1100B7A0F1 /* Meal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Meal.swift; sourceTree = "<group>"; };
 		02DCCBBB19C31EBC006360D0 /* Calorix.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Calorix.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		02DCCBBF19C31EBD006360D0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		02DCCBC019C31EBD006360D0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -118,6 +120,7 @@
 			isa = PBXGroup;
 			children = (
 				0295FDCA19C6797F006201D2 /* Food.swift */,
+				02A2B5DC19C9CC1100B7A0F1 /* Meal.swift */,
 			);
 			path = DataModels;
 			sourceTree = "<group>";
@@ -311,6 +314,7 @@
 				0295FDC519C5B1DA006201D2 /* ModelLocator.swift in Sources */,
 				0295FDCB19C6797F006201D2 /* Food.swift in Sources */,
 				0295FDC819C5BAD4006201D2 /* ParseBridgeModel.swift in Sources */,
+				02A2B5DD19C9CC1100B7A0F1 /* Meal.swift in Sources */,
 				02DCCBC119C31EBD006360D0 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

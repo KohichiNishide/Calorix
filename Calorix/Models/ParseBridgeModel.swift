@@ -24,7 +24,7 @@ class ParseBridgeModel {
                 return
             }
             self.loadedMeals = meals as [PFObject]
-            self.delegate?.loadedAllMeals()
+            self.asyncLoadAllFoods()
         })
     }
     
@@ -44,14 +44,15 @@ class ParseBridgeModel {
                     var reloadedFood = Food(name: name!, calorie: calorie!)
                     reloadedFoods.append(reloadedFood)
                 }
-                self.delegate?.loadedAllFoods(reloadedFoods)
+                //TODO: get image file
+                var takenAt: NSDate = meal.objectForKey("takenAt") as NSDate!
+                self.delegate?.loadedAllFoodsByMealUnit(Meal(takenAt: takenAt, foods: reloadedFoods))
             })
         }
     }
 }
 
 protocol ParseBridgeDelegate : class {
-    func loadedAllMeals() -> ()
-    func loadedAllFoods(foods: [Food]) -> ()
+    func loadedAllFoodsByMealUnit(meal: Meal) -> ()
 }
 
